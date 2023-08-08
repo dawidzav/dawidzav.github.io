@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B75P1BMMZT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-B75P1BMMZT');
-</script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moja Strona</title>
     <link rel="stylesheet" href="styles.css">
+
+   
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B75P1BMMZT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-B75P1BMMZT');
+    </script>
 </head>
 <body>
     <header>
@@ -30,5 +29,21 @@
     </audio>
 
     <p>This is my linkedin! <a href="https://www.linkedin.com/in/dawid-zawadzki-006047252/">Click here</a>, to view my profile!.</p>
+
+<p>Stronę odwiedzono już: <span id="visitCount">0</span> razy.</p>
+
+
+<script>
+    var visitCountElement = document.getElementById("visitCount");
+    var currentCount = parseInt(visitCountElement.innerHTML);
+    visitCountElement.innerHTML = currentCount + 1;
+</script>
+
 </body>
 </html>
+
+
+
+
+
+
