@@ -30,14 +30,19 @@
 
     <p>This is my linkedin! <a href="https://www.linkedin.com/in/dawid-zawadzki-006047252/">Click here</a>, to view my profile!.</p>
 
-<p>This page was visited: <span id="visitCount">0</span> times.</p>
-
-
-<script>
-    var visitCountElement = document.getElementById("visitCount");
-    var currentCount = parseInt(visitCountElement.innerHTML);
-    visitCountElement.innerHTML = currentCount + 1;
-</script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Visits Counter</title>
+    </head>
+    <body>
+        <p>This page was visited: <span id="visitCount">0</span> times.</p>
+    
+        <script>
+            var visitCountElement = document.getElementById("visitCount");
+            var currentCount = parseInt(visitCountElement.innerHTML);
+            visitCountElement.innerHTML = currentCount + 1;
+        </script>
 
 </body>
 </html>
