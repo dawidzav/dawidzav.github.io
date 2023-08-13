@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moja Strona</title>
     <link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="animations.css"> 
    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B75P1BMMZT"></script>
     <script>
@@ -18,37 +18,24 @@
 </head>
 <body>
     <header>
-        <h1>Hello! I'm Dawid Zawadzki.</h1>
+        <h1 class="typing-effect">Hello! I'm Dawid Zawadzki.</h1> 
     </header>
-    <p>La bière est délicieuse.</p>
-    <img src="images/piwo1.jpg" alt="yummy" width="300" height="200">
 
-    <audio controls>
-        <source src="audio/piwosong.mp3" type="audio/mpeg">
-        Twoja przeglądarka nie obsługuje odtwarzacza audio.
-    </audio>
+    <div class="content">
+        
+    </div>
 
-    <p>This is my linkedin! <a href="https://www.linkedin.com/in/dawid-zawadzki-006047252/">Click here</a>, to view my profile!.</p>
+    <footer class="footer">
+        <div class="audio-linkedin">
+            <audio controls>
+                <source src="audio/piwosong.mp3" type="audio/mpeg">
+                Twoja przeglądarka nie obsługuje odtwarzacza audio.
+            </audio>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Visits Counter</title>
-    </head>
-    <body>
-        <p>This page was visited: <span id="visitCount">0</span> times.</p>
-    
-        <script>
-            var visitCountElement = document.getElementById("visitCount");
-            var currentCount = parseInt(visitCountElement.innerHTML);
-            visitCountElement.innerHTML = currentCount + 1;
-        </script>
-
+            <p>
+                This is my linkedin! <a href="https://www.linkedin.com/in/dawid-zawadzki-006047252/">Click here</a>, to view my profile!.
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
-
-
-
-
-
-

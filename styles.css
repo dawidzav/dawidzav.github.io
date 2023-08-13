@@ -1,19 +1,63 @@
+/* styles.css */
 body {
-    background-color: black;
+    background-image: url('images/piwko.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 18px;
     color: blue;
-    font-size: 18px; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header {
+    text-align: left;
+    margin: 20px 20px 0;
+}
+
+.typing-effect {
+    overflow: hidden;
+    border-right: 0.15em solid blue;
+    white-space: nowrap;
+    letter-spacing: 0.15em;
+    animation: typing 6s steps(40, end) infinite, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: blue;
+    }
 }
 
 h1 {
-    text-transform: uppercase; 
-    font-size: 50px; 
-    font-weight: bold; 
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
 }
 
 a {
-    font-size: 35px; 
+    font-size: 35px;
     color: red;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
-  
+.footer {
+    margin-top: auto;
+    text-align: left;
+    padding-left: 20px;
+}
